@@ -149,24 +149,25 @@ nav ul li a:hover {
 
 /* Silder elements selectors*/
 .SliderContainer {
-    display: flex;
-    align-items: center;
+    background-color: #000;
     position: relative;
     width: 100%;
     height: 500px;
     margin-bottom: 30px;
 }
 
-.Slider {
-    display: flex;
-    height: inherit;
-}
-
 .SliderItems {
     width: inherit;
     height: inherit;
+    max-width: 1280px;
+    max-height: 500px;
     overflow: hidden;
-    /* max-width: 1280px; */
+    margin: 0 auto;
+}
+
+.Slider {
+    display: flex;
+    height: inherit;
 }
 
 .SliderItems img {
@@ -253,7 +254,7 @@ nav ul li a:hover {
     display: inline-block;
     background-color: var(--PrimaryColor);
     font-family: var(--PrimaryFont);
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     text-align: center;
     color: #FFF;
@@ -269,7 +270,6 @@ nav ul li a:hover {
 .Billboard {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-auto-rows: 300px;
     grid-auto-flow: dense;
     gap: 20px;
     width: 80%;
@@ -278,6 +278,7 @@ nav ul li a:hover {
 }
 
 .Billboard div {
+    aspect-ratio: 6 / 9;
     background-color: #222222;
     border-radius: 10px;
 }

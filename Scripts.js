@@ -47,7 +47,8 @@ function AddItemsInSlider()
                 Counter = Index;
                 MenuItemSelect(Counter);
                 Slider.style.transition = "all 1s ease";
-                Slider.style.marginLeft = `-${Counter * 100}%`;
+                var ImageWidth = document.querySelector(".SliderItems img");
+                Slider.style.transform = `translateX(-${ImageWidth.clientWidth * Counter}px`;
             }
         });
     });
@@ -65,7 +66,8 @@ function SliderLeftMovement()
 
     MenuItemSelect(Counter);
     Slider.style.transition = "all 1s ease";
-    Slider.style.marginLeft = `-${Counter * 100}%`;
+    var ImageWidth = document.querySelector(".SliderItems img");
+    Slider.style.transform = `translateX(-${ImageWidth.clientWidth * Counter}px`;
 }
 
 //Change image on right arrow click
@@ -80,7 +82,8 @@ function SliderRightMovement()
 
     MenuItemSelect(Counter);
     Slider.style.transition = "all 1s ease";
-    Slider.style.marginLeft = `-${Counter * 100}%`;
+    var ImageWidth = document.querySelector(".SliderItems img");
+    Slider.style.transform = `translateX(-${ImageWidth.clientWidth * Counter}px`;
 }
 
 //Unselect all buttons and select the corresponding
@@ -94,8 +97,18 @@ function MenuItemSelect(Index)
     });
 
     BtnMenuItem[Index].classList.add("Selected");
+    console.log(Counter);
 }
 
 LeftArrow.addEventListener("click",SliderLeftMovement);
 RightArrow.addEventListener("click",SliderRightMovement);
 AddItemsInSlider();
+
+//Add billboard cards of movies
+var Billboard = document.querySelector(".Billboard");
+
+for(var i = 0; i < 15; i++)
+{
+    Billboard.innerHTML += "<div>"
+}
+
