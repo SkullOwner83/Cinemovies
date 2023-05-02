@@ -1,115 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Proyecto Bonito uwu</title>
-        <link rel="stylesheet" href="Styles.css">
-    </head>
 
-    <body>
-        <header>
-            <div class="Head">
-                <!-- Burger for resolutions below 700px container -->
-                <div class="Burger">
-                    <label for="BurgerCheck">
-                        <svg id="Burger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1187 1187"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:3px;}</style></defs><title>CineMovie</title><rect class="cls-1" x="1.5" y="1.5" width="1184" height="1184"/><rect x="1" y="105.76" width="1184" height="204.87" rx="59.84"/><rect x="1.5" y="491.25" width="1184" height="204.87" rx="59.84"/><rect x="2" y="876.13" width="1184" height="204.87" rx="59.84"/></svg>
-                    </label>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Bonito uwu</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
 
-                <!-- Website isotype container -->
-                <div class="Isotype">
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1184.32 1184.32"><title>CineMovie</title><path d="M1523,777.06c-101-310.95-435-481.12-746-380.09S295.94,832,397,1142.94s435,481.12,746,380.09S1624.06,1088,1523,777.06ZM917,494a140,140,0,1,1-89.89,176.41A140,140,0,0,1,917,494Zm-407.43,405A140,140,0,1,1,686,988.93,140,140,0,0,1,509.57,899.05Zm296,464.45a140,140,0,1,1,89.88-176.41A140,140,0,0,1,805.52,1363.5Zm72.69-376.92a86,86,0,1,1,108.37,55.21A86,86,0,0,1,878.21,986.58Zm321.65,377.6a140,140,0,1,1,89.89-176.41A140,140,0,0,1,1199.86,1364.18Zm122-374.55a140,140,0,1,1,89.88-176.41A140,140,0,0,1,1321.87,989.63Z" transform="translate(-367.84 -367.84)"/></svg>
-                        <h1>CineMovies</h1>
-                    </a>
-                </div>
-
-                <!-- Shearch bar container -->
-                <div class="SearchBar">
-                    <input type="text" placeholder="Buscar películas">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
-                </div>
-                
-                <!-- Login container -->
-                <div class="LogIn">
-                    <a href="#">
-                        <svg id="Log_In" data-name="Log In" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1404 1404"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:4px;}</style></defs><title>CineMovie</title><circle class="cls-1" cx="702" cy="702" r="592"/><circle class="cls-1" cx="702" cy="702" r="700"/><path d="M960,260c-386.6,0-700,313.4-700,700s313.4,700,700,700,700-313.4,700-700S1346.6,260,960,260Zm0,1292c-327,0-592-265-592-592s265-592,592-592,592,265,592,592S1287,1552,960,1552Z" transform="translate(-258 -258)"/><path d="M1310.26,1265.75l-1.61,31a484,484,0,0,1-696.31,0l-1.63-31.24c-9.4-118.93,67-197.76,182.08-229.29l47-12.88a225.24,225.24,0,0,0,230-2.74l58.06,15.82C1243.08,1067.77,1319.68,1146.69,1310.26,1265.75Z" transform="translate(-258 -258)"/><path d="M1185.5,702.5c0,124.26-50,288-226,288s-224-163.74-224-288,100.74-225,225-225S1185.5,578.24,1185.5,702.5Z" transform="translate(-258 -258)"/></svg>                    
-                    </a>
-                </div>
+<body>
+    <header>
+        <div class="Head">
+            <!-- Burger for resolutions below 700px container -->
+            <div class="Burger">
+                <label for="BurgerCheck">
+                    <svg id="Burger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1187 1187">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                    stroke: #000;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 3px;
+                                }
+                            </style>
+                        </defs>
+                        <title>CineMovie</title>
+                        <rect class="cls-1" x="1.5" y="1.5" width="1184" height="1184" />
+                        <rect x="1" y="105.76" width="1184" height="204.87" rx="59.84" />
+                        <rect x="1.5" y="491.25" width="1184" height="204.87" rx="59.84" />
+                        <rect x="2" y="876.13" width="1184" height="204.87" rx="59.84" />
+                    </svg>
+                </label>
             </div>
 
-            <!--Navigation bar -->
-            <input type="checkbox" id="BurgerCheck">
-
-            <nav>
-                <div class="SearchBar">
-                    <input type="text" placeholder="Buscar películas">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
-                </div>
-                
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Estrenos</a></li>
-                    <li><a href="#">Preventa</a></li>
-                </ul>
-
-            </nav>
-        </header>
-
-        <main>
-            <!-- Slider -->
-            <div class="SliderContainer">
-                <div class="SliderItems">
-                    <img name="SlideImage" draggable="false">
-                </div>
-                            
-                <ul class="SliderMenu">
-
-                </ul>
-                
-                <div class="LeftArrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg>
-                </div>
-
-                <div class="RightArrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
-                </div>
+            <!-- Website isotype container -->
+            <div class="Isotype">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1184.32 1184.32">
+                        <title>CineMovie</title>
+                        <path
+                            d="M1523,777.06c-101-310.95-435-481.12-746-380.09S295.94,832,397,1142.94s435,481.12,746,380.09S1624.06,1088,1523,777.06ZM917,494a140,140,0,1,1-89.89,176.41A140,140,0,0,1,917,494Zm-407.43,405A140,140,0,1,1,686,988.93,140,140,0,0,1,509.57,899.05Zm296,464.45a140,140,0,1,1,89.88-176.41A140,140,0,0,1,805.52,1363.5Zm72.69-376.92a86,86,0,1,1,108.37,55.21A86,86,0,0,1,878.21,986.58Zm321.65,377.6a140,140,0,1,1,89.89-176.41A140,140,0,0,1,1199.86,1364.18Zm122-374.55a140,140,0,1,1,89.88-176.41A140,140,0,0,1,1321.87,989.63Z"
+                            transform="translate(-367.84 -367.84)" />
+                    </svg>
+                    <h1>CineMovies</h1>
+                </a>
             </div>
 
-            <div class="Separator">
-                <div></div>
-                <p>Cartelera</p>
-                <div></div>
+            <!-- Shearch bar container -->
+            <div class="SearchBar">
+                <input type="text" placeholder="Buscar películas">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z">
+                    </path>
+                </svg>
             </div>
 
-            <div class="Billboard">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+            <!-- Login container -->
+            <div class="LogIn">
+                <a href="#">
+                    <svg id="Log_In" data-name="Log In" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1404 1404">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                    stroke: #000;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 4px;
+                                }
+                            </style>
+                        </defs>
+                        <title>CineMovie</title>
+                        <circle class="cls-1" cx="702" cy="702" r="592" />
+                        <circle class="cls-1" cx="702" cy="702" r="700" />
+                        <path
+                            d="M960,260c-386.6,0-700,313.4-700,700s313.4,700,700,700,700-313.4,700-700S1346.6,260,960,260Zm0,1292c-327,0-592-265-592-592s265-592,592-592,592,265,592,592S1287,1552,960,1552Z"
+                            transform="translate(-258 -258)" />
+                        <path
+                            d="M1310.26,1265.75l-1.61,31a484,484,0,0,1-696.31,0l-1.63-31.24c-9.4-118.93,67-197.76,182.08-229.29l47-12.88a225.24,225.24,0,0,0,230-2.74l58.06,15.82C1243.08,1067.77,1319.68,1146.69,1310.26,1265.75Z"
+                            transform="translate(-258 -258)" />
+                        <path
+                            d="M1185.5,702.5c0,124.26-50,288-226,288s-224-163.74-224-288,100.74-225,225-225S1185.5,578.24,1185.5,702.5Z"
+                            transform="translate(-258 -258)" />
+                    </svg>
+                </a>
             </div>
-        </main>
+        </div>
 
-        <footer>
-            <p>Derechos reservados © Proyecto bonito uwu S. A. de C. V. 2022</p>
-        </footer>
+        <!--Navigation bar -->
+        <input type="checkbox" id="BurgerCheck">
 
-        <script src="Scripts.js"></script>
-    </body>
+        <nav>
+            <div class="SearchBar">
+                <input type="text" placeholder="Buscar películas">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z">
+                    </path>
+                </svg>
+            </div>
+
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Estrenos</a></li>
+                <li><a href="#">Preventa</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <!-- Slider -->
+        <div class="SliderContainer">
+            <div class="SliderItems">
+                <img name="SlideImage" draggable="false">
+            </div>
+
+            <ul class="SliderMenu">
+
+            </ul>
+
+            <div class="LeftArrow">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path>
+                </svg>
+            </div>
+
+            <div class="RightArrow">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="Separator">
+            <div></div>
+            <p>Cartelera</p>
+            <div></div>
+        </div>
+
+        <div class="Billboard">
+            <script defer>
+                const boxOfMovies = [];
+                // Obtener las películas
+                fetch('https://ca-cartelera.onrender.com/api/v1/movies', {
+                    method: "GET",
+                    headers: { "Content-type": "application/json;charset=UTF-8" }
+                }).then(response => response.json())
+                    .then(json => boxOfMovies.push(json?.content))
+                    .then(() => {
+                        console.log(boxOfMovies);
+                        // Iterar sobre las películas y crear un div por cada una
+                        boxOfMovies[0].forEach(movie => {
+                            const movieDiv = createMovieDiv(movie);
+                            document.getElementsByClassName("Billboard")[0].appendChild(movieDiv);
+                        });
+                    })
+                    .catch(err => console.log('Solicitud fallida', err));
+
+                function createMovieDiv(movie) {
+                    const movieDiv = document.createElement("div");
+                    
+                    const title = document.createElement("h2");
+                    title.textContent = movie.originalTitle;
+
+                    const description = document.createElement("p");
+                    description.textContent = movie.description;
+
+                    const clasification = document.createElement("p");
+                    clasification.textContent = movie.clasification;
+
+                    const duration = document.createElement("p");
+                    duration.textContent = movie.duration;
+                    
+                    movieDiv.appendChild(title);
+                    movieDiv.appendChild(description);
+                    movieDiv.appendChild(clasification);
+                    movieDiv.appendChild(duration);
+                    return movieDiv;
+                }
+            </script>
+        </div>
+    </main>
+
+    <footer>
+        <p>Derechos reservados © Proyecto bonito uwu S. A. de C. V. 2022</p>
+    </footer>
+
+    <script src="Scripts.js"></script>
+</body>
+
 </html>
 
 <!-- Pagina de iconos gratis svg uwu -->
