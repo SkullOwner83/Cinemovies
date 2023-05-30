@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Bonito uwu</title>
     <link rel="stylesheet" href="Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display:wght@500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -162,7 +166,9 @@
 
                 function createMovieDiv(movie) {
                     const movieDiv = document.createElement("div");
-                    
+
+                    const emptyDiv = document.createElement("div");
+
                     const title = document.createElement("h2");
                     title.textContent = movie.originalTitle;
 
@@ -174,13 +180,19 @@
 
                     const duration = document.createElement("p");
                     duration.textContent = movie.duration;
-                    
-                    movieDiv.appendChild(title);
-                    movieDiv.appendChild(description);
-                    movieDiv.appendChild(clasification);
-                    movieDiv.appendChild(duration);
+                    movieDiv.appendChild(emptyDiv);
+                    emptyDiv.appendChild(title);
+                    emptyDiv.appendChild(description);
+                    emptyDiv.appendChild(clasification);
+                    emptyDiv.appendChild(duration);
+
+                    movieDiv.style.backgroundImage = `url(${movie.image})`;
+                    movieDiv.style.backgroundPositionX = 'center';
+                    emptyDiv.className = 'cardContainer';
                     return movieDiv;
                 }
+
+
             </script>
         </div>
     </main>
