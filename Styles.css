@@ -197,7 +197,7 @@ nav ul li a:hover {
 .SliderItems img {
     width: inherit;
     height: inherit;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .SliderMenu {

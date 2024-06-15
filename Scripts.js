@@ -1,10 +1,21 @@
  //Declarate slider container
- var SliderItems = [
+const SliderItems = []
+
+ const getImages = async () => {
+    fetch('https://ca-cartelera.onrender.com/api/v1/movies/random').then((response) => {
+        response.json().then((data) => {
+            data.content.map((movie) => movie?.image && SliderItems.push(movie?.image) )
+        }).then(() => {
+            document.SlideImage.src = SliderItems[0];   
+        })
+    })
+ }
+/*  var SliderItems = [
     "https://wallpapercave.com/dwp1x/wp2051313.jpg",
     "https://wallpapercave.com/dwp1x/wp2051397.jpg",
     "https://wallpapercave.com/dwp1x/wp2051340.jpg",
     "https://wallpapercave.com/dwp1x/wp4102973.jpg"
-];
+]; */
 
 //Obtain markups of slider arrows 
 var LeftArrow = document.querySelector(".LeftArrow");
@@ -84,4 +95,7 @@ function MenuItemSelect(Index)
     BtnMenuItem[Index].classList.add("Selected");
 }
 
-AddSliderMenu();
+document.addEventListener('DOMContentLoaded', (event) => {
+    AddSliderMenu();
+    getImages();
+});
